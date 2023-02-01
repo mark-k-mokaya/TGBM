@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #111;
+    color: #fff;
+}
+
+p{
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #fff;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('images/wangari-maathai-hero-image.png');
+    background-size: cover;
+}
+
+.hero .content{
+    position: relative;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.hero .content h2{
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero .content h2 span{
+    background: #4F985F;
+    padding: 0 15px;
+}
+
+.hero .content p{
+    font-size: 2em;
+    color: #fff;
+}
+
+button.btn{
+    font-size: 1.35em;
+    font-weight: 400;
+    color: #fff;
+    background-color: #111;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: none;
+}
+
+.play-btn{
+    opacity: 0.4;
+    position: absolute;
+    z-index: 1000;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: -50px -30px;
+    border-radius: 200px;
+    text-align: center;
+    padding: 25px;
+    transition: 0.5s;
+}
+
+.play-btn:hover {
+    opacity: 1;
+}
+
+.play-btn img{
+    width: 40px;
+    object-fit: contain;
+}
+
+.hero .content .btn{
+    font-size: 0.8em;
+}
+
+.btn:hover{
+    background-color: #4F985F;
+    color: #fff;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background: #111;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+header .logo span{
+    color: #4F985F;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.35em;
+}
+
+header .navigation li .btn{
+    margin-top: -10px;
+    font-weight: 400;
+}
+
+header .navigation li a:hover{
+    color: #4F985F;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.titleText{
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.about .content .box{
+    position: relative;
+    width: 340px;
+    margin: 20px;
+    border-radius: 3px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.about .content .box .imgBx{
+    position: relative;
+    border: none;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+}
+
+.about .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.about .content .box .imgBx img:hover{
+    opacity: 0.8;
+}
+
+.about .content .box .text{
+    position: absolute;
+    padding: 5px;
+    margin: 10px;
+    text-align: justify;
+    bottom: 0;
+    left: 0;
+}
+
+.about .content .box .text h3{
+    font-weight: 600;
+}
+
+.wangari{
+    background-color: #fff;
+    color: #111;
+}
+
+.wangari p{
+    color: #111;
+}
+
+.wangari .col50 .imgBx{
+    position: relative;
+    width: 100%;
+}
+
+.wangari .col50 .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.quote{
+    position: relative;
+    background: url('images/tree-planting.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quote div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 200px;
+    text-align: center;
+}
+
+footer{
+    padding: 100px;
+}
+
+.contact-form{
+    margin: 50px auto;
+    padding: 75px 30px;
+    background-color: #fff;
+    max-width: 1200px;
+}
+
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.contact-form .input-box input[type="text"]{
+    width: 80%;
+    padding: 20px;
+    font-size: 1.2em;
+    outline: none;
+}
+
+.contact-form .input-box button{
+    width: 15%;
+    padding: 22px 10px;
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+
+.contact-form .input-box button:hover{
+    background-color: #4F985F;
+}
+
+.copyright-text{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.copyright-text p{
+    color: #777;
+}
+
+@media (max-width: 1024px){
+    header, header.sticky{
+        padding: 10px 40px;
+    }
+
+    header .navigation{
+       display: none; 
+    }
+
+    header .navigation.active{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 2000;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #111;
+     }
+
+     header .navigation li{
+         margin-bottom: 25px;
+     }
+
+     header .navigation li a{
+        font-size: 1.6em;
+     }
+
+     header .navigation li .btn{
+        margin-top: 0px;
+        font-weight: 400;
+    }
+
+    header .logo{
+        z-index: 5000;
+    }
+
+    .menu-btn{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('icons/menu.svg');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: center;
+        cursor: pointer;
+        z-index: 5000;
+    }
+
+    .menu-btn.active{
+        background: url('icons/close.svg');
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .hero .content h2{
+        font-size: 3em;
+    }
+
+    section{
+        padding: 100px 20px;
+        flex-direction: column;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .quote div{
+        padding: 0 20px;
+    }
+
+    .quote h1{
+        font-size: 1.5em;
+    }
+
+}
+
+@media(max-width: 480px){
+    .hero .content h2{
+        font-size: 2.2em;
+    }
+
+    .quote h1{
+        font-size: 1em;
+    }
+
+    footer{
+        padding: 100px 20px;
+    }
+
+    .contact-form{
+        margin: 50px auto;
+        padding: 0;
+    }
+
+    .contact-form .input-box input[type="text"]{
+        width: 70%;
+        border: none;
+    }
+
+    .contact-form .input-box button{
+        width: 30%;
+        border: none;
+        margin: 0;
+    }
+
+
+}
+
+
