@@ -1,3 +1,3 @@
 # TGBM
-A redesign of the official Green Belt Movement website.
+A redesign of the Green Belt Movement website.
 https://mark-k-mokaya.github.io/TGBM/
